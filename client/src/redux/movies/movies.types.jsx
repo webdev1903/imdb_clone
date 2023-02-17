@@ -1,0 +1,14 @@
+export const GET_MOVIES = "movies/get";
+export const GET_MOVIES_ERROR = "movies/get/error";
+export const ADD_MOVIE = "movies/add";
+export const ADD_MOVIE_ERROR = "movies/add/error";
+export const EDIT_MOVIE = "movies/edit";
+export const EDIT_MOVIE_ERROR = "movies/edit/error";
+export const GET_ACTORS = "actors/get_actors";
+export const GET_ACTORS_ERROR = "actors/get_actors/error";
+export const GET_PRODUCERS_ERROR = "movies/get_producers/errro";
+export const GET_PRODUCERS = "movies/get_producers";
+export const ADD_ACTOR = "movies/add_actor";
+export const ADD_ACTOR_ERROR = "movies/add_actor/error";
+export const ADD_PRODUCER = "movies/add_producer";
+export const ADD_PRODUCER_ERROR = "movies/add_producer/error";

@@ -1,0 +1,58 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+td {
+  /* border: 1px solid black; */
+  padding: 10px 0;
+}
+.customtd {
+  position: relative;
+  /* border: 1px solid black; */
+}
+.auto {
+  position: absolute;
+  width: 130px;
+  left: 90px;
+  top: 15px;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 2;
+}
+.auto li {
+  list-style: none;
+  border: 1px solid black;
+  width: 100%;
+  cursor: pointer;
+}
+.auto::-webkit-scrollbar {
+  display: none;
+}
+.actor_span {
+  border: 1px solid black;
+  padding: 3px;
+}
+.container {
+  position: relative;
+}
+.add_char {
+}
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1%;
+}
+.movieContainer > div {
+  width: 24%;
+  text-align: left;
+}
+.movieContainer > div > img {
+  width: 70%;
+}

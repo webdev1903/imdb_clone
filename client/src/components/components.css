@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: gray;
+}
+.navbar li {
+  list-style: none;
+  font-size: x-large;
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
+.modal {
+  position: absolute;
+  top: 150px;
+  left: 35%;
+  right: 0;
+  /* border: 1px solid red; */
+  background-color: gray;
+  padding: 50px;
+  z-index: 3;
+  width: fit-content;
+}
+.movieModal {
+  position: absolute;
+  top: 150px;
+  left: 35%;
+  right: 0;
+  /* border: 1px solid red; */
+  background-color: gray;
+  padding: 50px;
+  z-index: 3;
+  width: fit-content;
+}

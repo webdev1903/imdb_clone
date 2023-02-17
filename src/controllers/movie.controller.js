@@ -17,6 +17,7 @@ router.post("/", async (req, res) => {
     const movie = await Movie.create(req.body);
     return res.status(201).send({ movie, message: "movie added successfully" });
   } catch (error) {
+    console.log(error);
     return res.status(500).send(error);
   }
 });
