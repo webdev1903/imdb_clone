@@ -167,6 +167,7 @@ export default function AddMovies() {
                   placeholder="enter the movie title"
                   onChange={handleChange}
                   value={data.name}
+                  required
                 />
               </td>
             </tr>
@@ -181,6 +182,7 @@ export default function AddMovies() {
                   placeholder="2012"
                   onChange={handleChange}
                   value={data.year_of_release}
+                  required
                 />
               </td>
             </tr>
@@ -195,6 +197,7 @@ export default function AddMovies() {
                   cols="50"
                   onChange={handleChange}
                   value={data.plot}
+                  required
                 ></textarea>
               </td>
             </tr>
@@ -208,6 +211,7 @@ export default function AddMovies() {
                   name="poster"
                   accept="image/*"
                   onChange={handleChange}
+                  required
                 />
               </td>
             </tr>
@@ -263,6 +267,7 @@ export default function AddMovies() {
                     handleDebounceP(e.target.value);
                   }}
                   value={data.producer}
+                  required
                 />
                 {producerData.length > 0 && (
                   <ul className="auto">

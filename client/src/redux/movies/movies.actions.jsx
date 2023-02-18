@@ -15,7 +15,7 @@ import {
   ADD_PRODUCER_ERROR,
 } from "./movies.types";
 import axios from "axios";
-const url = "http://localhost:8000";
+const url = "https://imdb-pltu.onrender.com";
 
 export const getMovies = () => async (dispatch) => {
   try {

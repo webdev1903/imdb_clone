@@ -25,7 +25,6 @@ export default function AllMovies() {
     plot: "",
   });
   const { movies } = useSelector((store) => store.movies);
-  const [movieData, setMovieData] = useState(movies);
   const dispatch = useDispatch();
   const [modalState, setModalState] = useState(false);
   const [editMovieData, setEditMovieData] = useState({});
@@ -60,6 +59,7 @@ export default function AllMovies() {
     dispatch(editMovie(data, editMovieData._id));
     setModalState(false);
     dispatch(getMovies());
+    // window.location.reload(false);
   };
 
   const handleModalClose = () => {
@@ -82,8 +82,8 @@ export default function AllMovies() {
           handleClose={handleModalClose}
         />
       )}
-      {movieData.length > 0 &&
-        movieData.map((e, index) => (
+      {movies.length > 0 &&
+        movies.map((e, index) => (
           <div key={index}>
             <img src={e.poster} />
             <h4>Title : {e.name}</h4>
